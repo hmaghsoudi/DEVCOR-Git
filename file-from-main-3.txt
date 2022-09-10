@@ -1,0 +1,67 @@
+Fourth commit to the main branch
+
+Before staging and commiting:
+
+Initial commithanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git log --oneline
+d9f8e79 (HEAD -> main) Third commit (to main): file-from-main.txt renamed to file-from-main-1.txt. New file file-from-main-2.txt created.
+bd714ed Second commit (to main): file-from-main.txt file added to the main.
+b2b3152 (origin/main, origin/HEAD, main-br-b) Initial commit
+
+
+anya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ ls
+file-from-main-1.txt  file-from-main-2.txt  README.md
+
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git branch -vv
+* main      d9f8e79 [origin/main: ahead 2] Third commit (to main): file-from-main.txt renamed to file-from-main-1.txt. New file file-from-main-2.txt created.
+  main-br-a d1b6212 First commit to main-br-a: file-from-br-a.txt added.
+  main-br-b b2b3152 Initial commit
+
+
+anya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git cat-file -p HEAD
+tree 4303f53ad980183703208597ce96356a67f308d9
+parent bd714ed9fff0cf6064cb06c3b1977c70a6107e00
+author Hanya Mag <haniyeh.maghsoudi@gmail.com> 1662846092 -0700
+committer Hanya Mag <haniyeh.maghsoudi@gmail.com> 1662846092 -0700
+
+Third commit (to main): file-from-main.txt renamed to file-from-main-1.txt. New file file-from-main-2.txt created.
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git cat-file -p HEAD^
+tree cd3a5fe246bfca33dfd14a38d356d4d42ec9574e
+parent b2b31522462185f6ef9d05d9640a96796e1a8c43
+author Hanya Mag <haniyeh.maghsoudi@gmail.com> 1662838266 -0700
+committer Hanya Mag <haniyeh.maghsoudi@gmail.com> 1662838266 -0700
+
+Second commit (to main): file-from-main.txt file added to the main.
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git cat-file -p HEAD^^
+tree 35eaa58ee70995e892518d42c5c2317318e73d5a
+author Hanya <44790659+hmaghsoudi@users.noreply.github.com> 1662836368 -0700
+committer GitHub <noreply@github.com> 1662836368 -0700
+gpgsig -----BEGIN PGP SIGNATURE-----
+ 
+ wsBcBAABCAAQBQJjHN6QCRBK7hj4Ov3rIwAAN9UIABDeJomBk4i+1DTLZevPBGCX
+ iQJpIodEHp5GeiPSVATpGKFGkA9Aw6HOK4Q4nXuyJrPx1xo9vwCA1kvHK1aDHaK2
+ tOZh9pd31+083Ao6AexyD+Oxv7c0G9o5tn0YsnbON5S05XopJ8Sg69o37mrT16fD
+ qn07HfA6JSvFkQxkCOvPvV69yLn+Ny1uQm+/3K2bnJgXBinSyJx2zYOt3GHqA7qv
+ QqBbo41osJdUz+HVteCuiXu4pk6Mw6UCXFXqnASvDCxyVoeDvEIJKH6Td8Rlvctg
+ xw9fcm0XMSAXnQfeFIV+MNizikGbpiuI1pknOQVtvWkKpjYEMoPLsT73CTOIktU=
+ =pbef
+ -----END PGP SIGNATURE-----
+
+
+anya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git cat-file -p HEAD^1
+tree cd3a5fe246bfca33dfd14a38d356d4d42ec9574e
+parent b2b31522462185f6ef9d05d9640a96796e1a8c43
+author Hanya Mag <haniyeh.maghsoudi@gmail.com> 1662838266 -0700
+committer Hanya Mag <haniyeh.maghsoudi@gmail.com> 1662838266 -0700
+
+Second commit (to main): file-from-main.txt file added to the main.
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git cat-file -p HEAD^2
+fatal: Not a valid object name HEAD^2
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git cat-file -p HEAD^^2
+fatal: Not a valid object name HEAD^^2
+
+
+
+
+Creating file-from-main-3.txt
+Playing around with the references after commit.
