@@ -1,0 +1,47 @@
+On the main branch, second commit:
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git/.git$ git log --oneline
+bd714ed (HEAD -> main) Second commit (to main): file-from-main.txt file added to the main.
+b2b3152 (origin/main, origin/HEAD, main-br-b) Initial commit
+
+
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git/.git$ git branch -v
+* main      bd714ed [ahead 1] Second commit (to main): file-from-main.txt file added to the main.
+  main-br-a d1b6212 First commit to main-br-a: file-from-br-a.txt added.
+  main-br-b b2b3152 Initial commit
+
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git show HEAD
+commit bd714ed9fff0cf6064cb06c3b1977c70a6107e00 (HEAD -> main)
+Author: Hanya Mag <haniyeh.maghsoudi@gmail.com>
+Date:   Sat Sep 10 12:31:06 2022 -0700
+
+    Second commit (to main): file-from-main.txt file added to the main.
+
+diff --git a/file-from-main.txt b/file-from-main.txt
+...
+
+
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git show HEAD^
+commit b2b31522462185f6ef9d05d9640a96796e1a8c43 (origin/main, origin/HEAD, main-br-b)
+Author: Hanya <44790659+hmaghsoudi@users.noreply.github.com>
+Date:   Sat Sep 10 11:59:28 2022 -0700
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..953f753
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,2 @@
++# DEVCOR-Git
++Playing around with Git, getting ready for DEVCOR exam
+
+
+
+Now making a new file called file-from-main-2.txt
+After the third commit, will play around with references.
+
