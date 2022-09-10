@@ -30,3 +30,10 @@ Adding comments to this file.
 This will be the Seventh commit, to main-br-c.
 I will commit the change, checkout to main and merge.
 Hoping for a three way merge strategy.
+
+
+Now I'm on main branch, messing with this file to create some conflict.
+I'll commit this change to branch main,
+Check out to main-br-c, make some other changes to this file and commit to main-br-c.
+Then I'll checkout to main again and try to merge.
+Hoping for a conflict.
