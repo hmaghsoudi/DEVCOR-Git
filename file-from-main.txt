@@ -1,0 +1,29 @@
+Changes were commited to main-br-a branch. A text file called file-from-br-a.txt was created.
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git log
+commit d1b62128d4a8242f3286b178053ec243770018ad (HEAD -> main-br-a)
+Author: Hanya Mag <haniyeh.maghsoudi@gmail.com>
+Date:   Sat Sep 10 12:09:08 2022 -0700
+
+    First commit to main-br-a: file-from-br-a.txt added.
+
+commit b2b31522462185f6ef9d05d9640a96796e1a8c43 (origin/main, origin/HEAD, main-br-b, main)
+Author: Hanya <44790659+hmaghsoudi@users.noreply.github.com>
+Date:   Sat Sep 10 11:59:28 2022 -0700
+
+    Initial commit
+
+
+
+Then I checked out back to the main branch:
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git log
+commit b2b31522462185f6ef9d05d9640a96796e1a8c43 (HEAD -> main, origin/main, origin/HEAD, main-br-b)
+Author: Hanya <44790659+hmaghsoudi@users.noreply.github.com>
+Date:   Sat Sep 10 11:59:28 2022 -0700
+
+    Initial commit
+
+
+In my local directory, I can't see file-from-br-a.txt anymore.
+I'm creating this file called file-from-main.txt and then commit it to the main branch.
