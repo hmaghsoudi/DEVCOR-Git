@@ -65,3 +65,11 @@ fatal: Not a valid object name HEAD^^2
 
 Creating file-from-main-3.txt
 Playing around with the references after commit.
+
+
+
+Now adding a comment here for our Sisth commit.
+This commit will be done to the main branch.
+Then I will checkout to main-br-c, edit another file (file-from-br-c.txt), and commit.
+Then I will checkout back to main and merge.
+Hoping for a three-way merge strategy.
