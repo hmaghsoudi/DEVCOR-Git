@@ -1,0 +1,14 @@
+Branch main-br-a, a branch from the main branch.
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git branch -avv
+  main                b2b3152 [origin/main] Initial commit
+* main-br-a           b2b3152 Initial commit
+  main-br-b           b2b3152 Initial commit
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main b2b3152 Initial commit
+
+Before editing: Only README file existed.
+
+Now I'm adding this text file, from-br-a.txt
+
+Next step will be to add to staging area, then commit.
