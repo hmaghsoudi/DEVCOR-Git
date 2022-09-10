@@ -30,3 +30,10 @@ Adding comments to this file.
 This will be the Seventh commit, to main-br-c.
 I will commit the change, checkout to main and merge.
 Hoping for a three way merge strategy.
+
+
+It's not called a three-way, but a recursive. That's probably the new name for it.
+They've also changed "master" to "main".
+So, editing this file on main-br-c branch. Commiting.
+Then switching back to main and merge.
+Hoping for a merging conflict.
