@@ -12,3 +12,10 @@ Before editing: Only README file existed.
 Now I'm adding this text file, from-br-a.txt
 
 Next step will be to add to staging area, then commit.
+
+
+Will be adding 3 commits to branch main-br-a and then do a merge on main.
+Want to see if I see all 3 commits or only the last one.
+
+Then I will try again with rebase.
+This is commit 17th on main-br-a.
