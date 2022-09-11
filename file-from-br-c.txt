@@ -1,0 +1,46 @@
+Adding file-from-br-c.txt to branch main-br-c
+Testing merge, hoping for fast-forward strategy
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git branch -avv
+  main                013a533 [origin/main: ahead 5] Merge branch 'main-br-a' into main
+  main-br-a           d1b6212 First commit to main-br-a: file-from-br-a.txt added.
+  main-br-b           b2b3152 Initial commit
+* main-br-c           013a533 Merge branch 'main-br-a' into main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main b2b3152 Initial commit
+
+
+hanya@hanya-virtual-machine:~/DEVCOR/DEVCOR-Git$ git log --oneline
+013a533 (HEAD -> main-br-c, main) Merge branch 'main-br-a' into main
+bb44ab7 Fourth commit (to main): file-from-main-3.txt created.
+d9f8e79 Third commit (to main): file-from-main.txt renamed to file-from-main-1.txt. New file file-from-main-2.txt created.
+bd714ed Second commit (to main): file-from-main.txt file added to the main.
+d1b6212 (main-br-a) First commit to main-br-a: file-from-br-a.txt added.
+b2b3152 (origin/main, origin/HEAD, main-br-b) Initial commit
+
+
+
+After adding this file, I will stage and commit the change to main-br-c,
+Checkout to main,
+and merge main-br-c to main.
+
+
+
+Adding comments to this file.
+This will be the Seventh commit, to main-br-c.
+I will commit the change, checkout to main and merge.
+Hoping for a three way merge strategy.
+
+
+It's not called a three-way, but a recursive. That's probably the new name for it.
+They've also changed "master" to "main".
+So, editing this file on main-br-c branch. Commiting.
+Then switching back to main and merge.
+Hoping for a merging conflict.
+
+I'm a bit lost. It said the merge failed because of conflict. I should try that again. Next.
+
+
+Adding some comments to this file for Eleventh commit on the main branch.
+Next I will edit the file on main-br-c and commit, then I'll try to merge.
+Hoping for a merge conflict.
