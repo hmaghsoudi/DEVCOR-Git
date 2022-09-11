@@ -19,3 +19,9 @@ Want to see if I see all 3 commits or only the last one.
 
 Then I will try again with rebase.
 This is commit 17th on main-br-a.
+
+Merge shows all commits in the history, but when you switch to them, they don't have everything main (receiver) has. They only have what the source has.
+I'm thinking maybe if I do rebase, I can switch back on the receiver with the whole directory there.
+
+Also editing this file on main-br-a, trying to see even without commit I can see it on main.
+Checking out to main without commiting here.
