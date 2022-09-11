@@ -43,3 +43,5 @@ I'm a bit lost. It said the merge failed because of conflict. I should try that 
 Editing this file on main-br-c for the 12th commit.
 Then I'll go back to the main branch and try to merge.
 Hoping for a merge conflict.
+
+Trying again, 15th commit on main-br-c
