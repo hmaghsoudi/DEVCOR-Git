@@ -1,3 +1,9 @@
 This will be the 19th commit. Creating this new file file-from-br-a-2.txt.
 After this, I will switch back to main and merge.
 Hoping for losing history of 17th and 18th commits.
+
+
+So the history did show it.
+But when you switch to it on main, you only see the files in main-br-a and not main's files.
+Now commiting 21st commit on main-br-a, and then will do a rebase.
+Hoping when I go back to main and switch back to a commit, I have everything there.
